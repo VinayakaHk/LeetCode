@@ -14,12 +14,3 @@ func twoSum(nums []int, target int) []int {
 	}
 	return nil
 }
-
-func main() {
-	a := []int{2, 7, 11, 15}
-	target := 9
-	twoSum(a, target)
-	bestTimeToBuyAndSellStock(a)
-	majorityElement(a)
-	containsDuplicate(a)
-}
