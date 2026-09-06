@@ -13,6 +13,6 @@ func bestTimeToBuyAndSellStock(prices []int) int {
 		}
 		r++
 	}
-	println("2. ", maxp)
+	print("2. ", maxp)
 	return maxp
 }

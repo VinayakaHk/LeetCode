@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func majorityElement(nums []int) int {
 	maxMap := make(map[int]int)
 	maxV := 0
@@ -20,6 +16,6 @@ func majorityElement(nums []int) int {
 			maxV = i
 		}
 	}
-	fmt.Println(maxV)
+	print("3. ", maxV)
 	return maxV
 }
