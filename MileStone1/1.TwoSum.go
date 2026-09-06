@@ -20,5 +20,6 @@ func main() {
 	target := 9
 	twoSum(a, target)
 	bestTimeToBuyAndSellStock(a)
+	majorityElement(a)
 
 }
