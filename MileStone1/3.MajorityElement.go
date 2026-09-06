@@ -2,11 +2,24 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 func majorityElement(nums []int) int {
-	sort.Ints(nums)
-	fmt.Println("3. ", nums[len(nums)/2])
-	return nums[len(nums)/2]
+	maxMap := make(map[int]int)
+	maxV := 0
+	for _, v := range nums {
+		_, ok := maxMap[v]
+		if ok {
+			maxMap[v] = maxMap[v] + 1
+		} else {
+			maxMap[v] = 1
+		}
+	}
+	for i, v := range maxMap {
+		if v > len(nums)/2 {
+			maxV = i
+		}
+	}
+	fmt.Println(maxV)
+	return maxV
 }

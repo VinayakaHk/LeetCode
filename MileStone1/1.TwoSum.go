@@ -21,5 +21,5 @@ func main() {
 	twoSum(a, target)
 	bestTimeToBuyAndSellStock(a)
 	majorityElement(a)
-
+	containsDuplicate(a)
 }
